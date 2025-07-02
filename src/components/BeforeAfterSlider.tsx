@@ -3,13 +3,11 @@
 import { useState, useRef } from 'react';
 
 interface BeforeAfterSliderProps {
-  beforeImage?: string;
-  afterImage?: string;
   title: string;
   description: string;
 }
 
-const BeforeAfterSlider = ({ beforeImage, afterImage, title, description }: BeforeAfterSliderProps) => {
+const BeforeAfterSlider = ({ title, description }: BeforeAfterSliderProps) => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);

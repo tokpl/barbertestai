@@ -27,10 +27,6 @@ export default function Terminarz() {
     '16:00', '16:30', '17:00', '17:30', '18:00', '18:30'
   ];
 
-  const handleServiceSelect = (serviceId: string) => {
-    setSelectedService(serviceId);
-  };
-
   const handleBooking = (e: React.FormEvent) => {
     e.preventDefault();
     

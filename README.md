@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Barber Studio - Wizytówka dla Barbera
 
-## Getting Started
+Nowoczesna wizytówka internetowa dla profesjonalnego salonu fryzjerskiego/barbera. Projekt został stworzony w Next.js z TypeScript i Tailwind CSS.
 
-First, run the development server:
+## 🚀 Funkcjonalności
+
+### Strony
+- **Home** - Strona główna z hero section, usługami, galerią przed/po, cenami, godzinami otwarcia i procesem obsługi
+- **O Nas** - Historia firmy, zespół, filozofia, studio i osiągnięcia
+- **Galeria** - Interaktywna galeria z filtrowaniem kategorii i komponentami przed/po
+- **Terminarz** - Rezerwacja wizyt online z wyborem usług, dat i godzin
+- **Kontakt** - Informacje kontaktowe i formularz
+
+### Komponenty
+- **Navigation** - Responsywna nawigacja z menu mobilnym
+- **Footer** - Stopka z linkami i informacjami kontaktowymi
+- **BeforeAfterSlider** - Interaktywny suwak do prezentacji efektów przed/po
+
+### Funkcjonalności techniczne
+- ✅ Responsywny design (mobile-first)
+- ✅ Interaktywne filtry galerii
+- ✅ Formularz rezerwacji z walidacją
+- ✅ Smooth scrolling i animacje
+- ✅ Dostępność (accessibility)
+- ✅ SEO-friendly
+
+## 🎨 Design
+
+### Kolorystyka
+- **Główny**: Ciemne tło (gray-900, gray-800, black)
+- **Akcent**: Złoty/żółty (#FCD34D - yellow-400)
+- **Tekst**: Biały i odcienie szarości
+
+### Style
+- Nowoczesny, minimalistyczny design
+- Gradient backgrounds
+- Glassmorphism effects (backdrop-blur)
+- Smooth transitions i hover effects
+
+## 🛠️ Technologie
+
+- **Framework**: Next.js 15 (App Router)
+- **Język**: TypeScript
+- **Stylowanie**: Tailwind CSS
+- **Icons**: Heroicons (SVG)
+- **Fonty**: Geist Sans, Geist Mono
+
+## 📦 Instalacja i uruchomienie
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Klonowanie repozytorium
+git clone [repository-url]
+
+# Przejście do katalogu projektu
+cd asdasdasd
+
+# Instalacja zależności
+pnpm install
+
+# Uruchomienie serwera deweloperskiego
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Aplikacja będzie dostępna pod adresem `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Struktura projektu
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # App Router pages
+│   ├── galeria/           # Strona galerii
+│   ├── kontakt/           # Strona kontaktu
+│   ├── o-nas/             # Strona o nas
+│   ├── terminarz/         # Strona rezerwacji
+│   ├── globals.css        # Globalne style
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Strona główna
+├── components/            # Komponenty React
+│   ├── BeforeAfterSlider.tsx
+│   ├── Footer.tsx
+│   └── Navigation.tsx
+└── .github/
+    └── copilot-instructions.md
+```
 
-## Learn More
+## 🎯 Funkcjonalności użytkownika
 
-To learn more about Next.js, take a look at the following resources:
+### Strona główna
+- Hero section z call-to-action
+- Prezentacja usług z ikonami
+- Galeria "przed/po" z suwakami
+- Cennik usług
+- Godziny otwarcia
+- Opis procesu obsługi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Galeria
+- Filtrowanie po kategoriach (Wszystkie, Strzyżenia, Golenie, Brody)
+- Animowane przejścia między kategoriami
+- Komponenty przed/po z interaktywnymi suwakami
+- Opinie klientów
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Terminarz
+- Wybór usług (interaktywne karty)
+- Formularz rezerwacji z walidacją
+- Wybór daty i godziny
+- Symulacja procesu rezerwacji
+- Godziny otwarcia
 
-## Deploy on Vercel
+### O Nas
+- Historia firmy
+- Prezentacja zespołu
+- Filozofia pracy
+- Galeria studia
+- Osiągnięcia i certyfikaty
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Responsywność
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projekt został zaprojektowany z podejściem mobile-first:
+- Mobile: 320px+
+- Tablet: 768px+
+- Desktop: 1024px+
+- Large Desktop: 1280px+
+
+## 🔧 Customizacja
+
+### Zmiana kolorów
+Edytuj zmienne w `tailwind.config.ts` lub użyj klas Tailwind:
+- Główny akcent: `yellow-400`
+- Tło: `gray-900`, `gray-800`
+- Tekst: `white`, `gray-300`, `gray-400`
+
+### Dodawanie nowych usług
+Edytuj tablicę `services` w `src/app/terminarz/page.tsx`
+
+### Modyfikacja galerii
+Dodaj nowe elementy do `galleryItems` w `src/app/galeria/page.tsx`
+
+## 📄 Licencja
+
+Projekt stworzony dla celów edukacyjnych i prezentacyjnych.
+
+## 🤝 Wsparcie
+
+W przypadku pytań lub problemów, skontaktuj się z deweloperem.
